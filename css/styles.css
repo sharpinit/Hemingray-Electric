@@ -20,15 +20,10 @@
   --border-primary: rgba(243,133,16,0.2);
 
   /* Typography */
-  /* --font-sans:    'DM Sans', sans-serif;
-  --font-mono:    'Barlow Condensed', sans-serif;*/
-  /* --font-display: 'Barlow Condensed', sans-serif; */
-  /* --font-serif:   'Playfair Display', serif;  */
-  
-  --font-sans:    'Inter', sans-serif;
-  --font-display: 'Anton', sans-serif;
+  --font-sans:    'DM Sans', sans-serif;
   --font-mono:    'DM Mono', monospace;
-  --font-serif:   'Avenir Next Condensed', 'Avenir Condensed', 'Barlow Condensed', sans-serif;
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-serif:   'Josefin Sans', sans-serif;
 
   /* Type Scale */
   --text-base: 1.8rem;          /* primary body copy                    */
@@ -190,6 +185,7 @@ nav {
   font-family: var(--font-serif);
   font-size: var(--text-md); font-weight: 700;
   letter-spacing: 0.03em; color: var(--off); display: block;
+  text-transform: uppercase;
 }
 .nav-location {
   font-family: var(--font-mono);
@@ -314,8 +310,8 @@ nav {
 
 .hero-h1 {
   font-family: var(--font-display);
-  font-size: clamp(6rem, 11vw, 16rem);
-  line-height: 0.92; letter-spacing: 0.01em; margin-bottom: 4rem;
+  font-size: clamp(6rem, 11vw, 20rem);
+  line-height: 0.75; letter-spacing: 0.01em; margin-bottom: 4rem;
 }
 .hero-h1 .accent { color: var(--primary); }
 
@@ -547,7 +543,7 @@ nav {
 ============================================================ */
 .contact {
   padding: 11.2rem var(--section-x);
-  display: grid;   gap: 9.6rem;
+  display: grid; grid-template-columns: 5fr 4fr; gap: 9.6rem;
   align-items: start;
 }
 .contact-info .section-title { margin-bottom: 2.4rem; }
@@ -643,7 +639,7 @@ footer { background: var(--mid); border-top: 1px solid var(--border); }
   display: flex; align-items: center; justify-content: center;
 }
 .footer-logo-ph span { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.05em; color: var(--muted); }
-.footer-name { font-family: var(--font-serif); font-size: var(--text-md); font-weight: 700; color: var(--off); }
+.footer-name { font-family: var(--font-serif); font-size: var(--text-md); font-weight: 700; color: var(--off); text-transform: uppercase;}
 .footer-loc {
   font-family: var(--font-mono);
   font-size: var(--text-xs); letter-spacing: 0.22em;
