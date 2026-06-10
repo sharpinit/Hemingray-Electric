@@ -188,11 +188,13 @@ nav {
   font-size: var(--text-md); font-weight: 700;
   letter-spacing: 0.03em; color: var(--off); display: block;
   text-transform: uppercase;
+  line-height: var(--text-md);
 }
 .nav-location {
   font-family: var(--font-mono);
   font-size: var(--text-xs); letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--primary); display: block; margin-top: 0.4rem;
+  color: var(--primary); display: block;
+  line-height: var(--text-xs);
 }
 
 .nav-links { display: flex; align-items: center; gap: 4rem; }
@@ -533,7 +535,10 @@ nav {
   color: rgba(242,237,231,0.72);
   font-style: italic; flex: 1;
 }
-.rv-author { margin-top: auto; }
+.rv-author { 
+  background-color: transparent;
+  border-top: 0px;
+  margin-top: auto; }
 .rv-name { font-family: var(--font-sans); font-size: var(--text-xs); font-weight: 500; color: var(--off); }
 .rv-location {
   font-family: var(--font-mono);
@@ -629,7 +634,7 @@ textarea.cf-input { resize: vertical; min-height: 10.8rem; }
 /* ============================================================
    FOOTER
 ============================================================ */
-footer { background: var(--mid); border-top: 1px solid var(--border); }
+footer { border-top: 1px solid var(--border); background: var(--mid);}
 .footer-wrap {
   max-width: var(--max-w); margin: 0 auto;
   padding: 4rem var(--section-x);
@@ -642,11 +647,12 @@ footer { background: var(--mid); border-top: 1px solid var(--border); }
   display: flex; align-items: center; justify-content: center;
 }
 .footer-logo-ph span { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.05em; color: var(--muted); }
-.footer-name { font-family: var(--font-serif); font-size: var(--text-md); font-weight: 700; color: var(--off); text-transform: uppercase;}
+.footer-name { font-family: var(--font-serif); font-size: var(--text-md); font-weight: 700; color: var(--off); text-transform: uppercase; line-height: var(--text-md);}
 .footer-loc {
   font-family: var(--font-mono);
   font-size: var(--text-xs); letter-spacing: 0.22em;
-  text-transform: uppercase; color: var(--muted); margin-top: 0.4rem;
+  text-transform: uppercase; color: var(--muted);
+  line-height: var(--text-xs);
 }
 .footer-right { text-align: right; }
 .footer-meta { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--muted); line-height: 1.8; }
