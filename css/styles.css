@@ -350,7 +350,7 @@ nav {
 /* ============================================================
    STATEMENT STRIP
 ============================================================ */
-.statement { background: var(--primary); }
+.statement { background: var(--secondary); }
 .statement .wrap {
   padding: var(--section-x);
   display: grid; grid-template-columns: 1fr auto;
