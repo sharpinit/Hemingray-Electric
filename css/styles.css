@@ -177,7 +177,7 @@ nav {
   text-decoration: none; flex-shrink: 0;
 }
 .nav-logo-mark {
-  width: 4.8rem; height: 4.8rem; flex-shrink: 0;
+  width: 6.4rem; height: 6.4rem; flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
 }
 .nav-logo-mark span {
@@ -647,7 +647,7 @@ footer { border-top: 1px solid var(--border); background: var(--mid);}
 }
 .footer-brand { display: flex; align-items: center; gap: 1.6rem; }
 .footer-logo-ph {
-  width: 3.2rem; height: 3.2rem; flex-shrink: 0;
+  flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
 }
 .footer-logo-ph span { font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.05em; color: var(--muted); }
