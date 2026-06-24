@@ -81,6 +81,10 @@ main {
 .wrap { width: 100%; }
 main { overflow-x: hidden; }
 
+.br {
+  white-space: pre-line;
+}
+
 /* ============================================================
    SKIP LINK
 ============================================================ */
@@ -200,7 +204,7 @@ nav {
   line-height: var(--text-xs);
 }
 
-.nav-links { display: flex; align-items: center; gap: 4rem; }
+.nav-links { display: flex; align-items: center; gap: 4rem; list-style: none; }
 
 .nav-links a:not(.nav-cta) {
   color: var(--secondary); font-size: var(--text-xs); letter-spacing: 0.05em;
