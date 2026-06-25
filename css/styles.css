@@ -252,7 +252,7 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;            /* was: center */
-  padding: 10rem var(--section-x) 4rem;   /* top padding clears the fixed nav */
+  padding: 14rem var(--section-x) 4rem;   /* top padding clears the fixed nav */
   gap: 3.2rem;
   overflow-y: auto;                       /* the key addition */
   -webkit-overflow-scrolling: touch;
@@ -283,6 +283,7 @@ nav {
 .mobile-drawer .drawer-cta {
   display: inline-flex;
   align-items: center;
+  min-height: auto;
 }
 .drawer-rule {
   width: 4rem; height: 1px; background: var(--border-primary); margin: 0.8rem 0;
