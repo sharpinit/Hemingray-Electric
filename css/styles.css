@@ -382,6 +382,7 @@ nav {
   text-decoration: none; white-space: nowrap; flex-shrink: 0;
   transition: background var(--transition);
   border-radius: var(--radius);
+  width: fit-content;
 }
 .statement-action:hover,
 .statement-action:focus-visible {
