@@ -249,8 +249,13 @@ nav {
   display: none; visibility: hidden;
   position: fixed; inset: 0; z-index: 199;
   background: rgba(15,14,15,0.98); backdrop-filter: blur(16px);
-  flex-direction: column; align-items: flex-start;
-  justify-content: center; padding: 6.4rem var(--section-x); gap: 3.2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;            /* was: center */
+  padding: 10rem var(--section-x) 4rem;   /* top padding clears the fixed nav */
+  gap: 3.2rem;
+  overflow-y: auto;                       /* the key addition */
+  -webkit-overflow-scrolling: touch;
 }
 .mobile-drawer.open { display: flex; visibility: visible; }
 .mobile-drawer a {
@@ -273,6 +278,11 @@ nav {
 .mobile-drawer .drawer-cta:focus-visible {
   background: var(--primary-hover);
   outline: 2px solid var(--primary); outline-offset: 0.4rem;
+}
+.mobile-drawer a.btn-primary,
+.mobile-drawer .drawer-cta {
+  display: inline-flex;
+  align-items: center;
 }
 .drawer-rule {
   width: 4rem; height: 1px; background: var(--border-primary); margin: 0.8rem 0;
