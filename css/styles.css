@@ -495,7 +495,7 @@ nav {
 .work { padding: 9.6rem var(--section-x); }
 .work-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 27.2rem 21.2rem 21.2rem;;
+  grid-template-rows: 28rem 24rem 24rem;;
   gap: 0.4rem; margin-top: 4.8rem;
 }
 .w-cell { position: relative; overflow: hidden; background: var(--card); }
@@ -519,11 +519,6 @@ nav {
   color: var(--secondary); margin-bottom: 0.4rem;
 }
 .w-title { font-size: var(--text-md); font-weight: 500; }
-.w-ph {
-  position: absolute; inset: 0; display: flex;
-  align-items: center; justify-content: center; opacity: 0.05;
-}
-.w-ph svg { width: 3.2rem; color: var(--off); }
 
 /* ============================================================
    REVIEWS
