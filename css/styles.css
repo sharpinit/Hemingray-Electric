@@ -725,7 +725,7 @@ footer { border-top: 1px solid var(--border); background: var(--mid);}
   .hero-stats { grid-template-columns: 1fr; }
   .hstat { border-right: none; border-bottom: 1px solid var(--border); }
   .hstat:last-child { border-bottom: none; }
-  .work-grid { grid-template-columns: 1fr; }
+  .work-grid { grid-template-columns: 1fr; grid-template-rows: 20rem 20rem 20rem 20rem 20rem 20rem; }
   .nav-wordmark {display: none;}
 }
 
