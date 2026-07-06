@@ -516,7 +516,6 @@ nav {
 .w-cat {
   font-family: var(--font-mono);
   font-size: var(--text-xs); letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--secondary); margin-bottom: 0.4rem;
 }
 .w-title { font-size: var(--text-md); font-weight: 500; }
 
