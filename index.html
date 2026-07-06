@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="css/styles.css"><html lang="en-US">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hemingray Electric Company | Licensed Electrician in Twin Falls & Magic Valley, Idaho</title>
-<meta name="description" content="Hemingray Electric Company — licensed, insured electrician serving Twin Falls, Jerome & Gooding Counties. Residential, commercial, agricultural, solar, EV chargers & 24/7 emergency calls. Honest work. Fair pricing.">
+<meta name="description" content="Hemingray Electric Company. Licensed, insured electrician serving Twin Falls, Jerome & Gooding Counties. Residential, commercial, EV chargers, generators & emergency calls. Honest work. Fair pricing.">
 <meta property="og:title" content="Hemingray Electric Company | Magic Valley, Idaho">
-<meta property="og:description" content="The electrician Magic Valley trusts. Residential, commercial, agricultural, solar, and emergency electrical services.">
+<meta property="og:description" content="The electrician Magic Valley trusts. Residential, commercial, and emergency electrical services.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://yourdomain.com/">
-<meta property="og:image" content="https://yourdomain.com/img/og-share.jpg">
+<meta property="og:url" content="https://hemingrayelectric.com/">
+<meta property="og:image" content="https://hemingrayelectric.com/img/og-image.png">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hemingray Electric Company | Twin Falls, Idaho">
-<meta name="twitter:description" content="Licensed electrician serving Magic Valley. Residential, commercial, solar, EV, and emergency calls.">
+<meta name="twitter:description" content="Licensed electrician serving Magic Valley. Residential, commercial, EV, generators, and emergency calls.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Josefin+Sans:wght@600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="canonical" href="https://yourdomain.com/">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://hemingrayelectric.com/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "Electrician"],
   "name": "Hemingray Electric Company",
-  "url": "https://yourdomain.com",
+  "url": "https://hemingrayelectric.com",
   "telephone": "+12084205094",
-  "description": "Licensed electrician serving Magic Valley, Idaho. Residential, commercial, agricultural, solar, EV chargers, and emergency calls.",
+  "description": "Licensed electrician serving Magic Valley, Idaho. Residential, commercial, EV chargers, generators, and emergency calls.",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Twin Falls",
@@ -41,30 +42,35 @@
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Electrical" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Electrical" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Solar Installation" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EV Charger Installation" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Electrical Service" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Generator Installation" } }
     ]
   }
 }
-"aggregateRating": {
-  "@type": "AggregateRating",
-  "ratingValue": "5.0",
-  "reviewCount": "40",
-  "bestRating": "5"
-}
 </script>
-</head>
-<body>
+<!-- NOTE: aggregateRating intentionally omitted until real Google reviews exist. When they do,
+     add it back here with the TRUE values, e.g.:
+     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "X.X", "reviewCount": "N", "bestRating": "5" }
+     The numbers must match the live Google rating exactly, or Google can flag the markup. -->
 </head>
 <body>
 
+<!-- SKIP LINK -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- MOBILE DRAWER -->
+<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
+  <a href="#about" onclick="closeDrawer()">About</a>
+  <a href="#services" onclick="closeDrawer()">Services</a>
+  <a href="#work" onclick="closeDrawer()">Work</a>
+  <a href="#contact" class="btn-primary" onclick="closeDrawer()">Get a Free Quote</a>
+</nav>
 <!-- PRIMARY NAV -->
 <header>
   <nav aria-label="Primary navigation">
     <div class="nav-wrap">
-      <a class="nav-logo" href="#main-content" aria-label="Hemingray Electric Company — home">
+      <a class="nav-logo" href="#main-content" aria-label="Hemingray Electric Company, home">
         <img
           src="img/logo/hemingray-logo.svg"
           alt="Hemingray Electric logo"
@@ -76,9 +82,22 @@
         </div>
       </a>
 
-      
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact" class="btn-primary">Free Quote</a></li>
+      </ul>
 
-      
+      <button
+        class="nav-hamburger"
+        id="hamburgerBtn"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileDrawer"
+      >
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 </header>
@@ -94,15 +113,222 @@
     </div>
 
     <div class="hero-body">
+      <div class="hero-badge" role="note">
+        <span class="hero-badge-pulse" aria-hidden="true"></span>
+        <span class="hero-badge-text">Licensed · Insured · Magic Valley, Idaho</span>
+      </div>
 
       <h1 class="hero-h1" id="hero-heading">
-        Coming soon
+        <span class="sr-only">Magic Valley's Electrician. </span>Done Right.<br><span class="accent">Done Honest.</span>
       </h1>
 
-      
+      <p class="hero-desc">
+        The electrician Magic Valley trusts to show up on time, do the job right, and stand behind the work. Residential and commercial, start to finish.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Get a Free Quote</a>
+        <a href="#work" class="btn-ghost">View Our Work</a>
+      </div>
     </div>
 
-    
+    <div class="hero-stats" role="list" aria-label="Business highlights">
+      <div class="hstat" role="listitem">
+        <div class="hstat-num">100<span class="h-accent">+</span></div>
+        <div class="hstat-label">Projects Complete</div>
+      </div>
+      <div class="hstat" role="listitem">
+        <div class="hstat-num">10<span class="h-accent">+</span></div>
+        <div class="hstat-label">Years Experience</div>
+      </div>
+      <div class="hstat" role="listitem">
+        <div class="hstat-num">Fast</div>
+        <div class="hstat-label">Response</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENT STRIP -->
+  <section aria-label="Brand statement">
+    <div class="statement">
+      <div class="wrap">
+        <p class="statement-text">Integrity isn't a selling point. It's the standard.</p>
+        <a href="#contact" class="statement-action">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about-visual" role="img" aria-label="Zach, owner of Hemingray Electric Company, smiling in a company cap in front of leafy trees">
+      <div class="about-visual-glow" aria-hidden="true"></div>
+      <img src="img/company/zach-head-shot.jpg" alt=""/></div>
+      <span class="about-corner tl" aria-hidden="true">Hemingray Electric Co.</span>
+      <span class="about-corner br" aria-hidden="true">Magic Valley, Idaho</span>
+    </div>
+
+    <div class="about-content">
+      <div class="eyebrow" aria-label="Who we are">Who We Are</div>
+      <h2 class="section-title br" id="about-heading">Integrity over&NewLine;<span class="t-primary">profit.</span> Always.
+      </h2>
+      <div class="about-rule" aria-hidden="true"></div>
+      <p class="body-text">
+        Hemingray Electric Company was built on more than a decade of hands-on experience across residential, commercial, and industrial work: troubleshooting, installations, and full project management from start to finish.
+      </p>
+      <p class="body-text" style="margin-top: 1rem;">
+        We pride ourselves on quality workmanship and attention to detail. Corners are never cut. Excuses are never made. We do what we say, and we do what's right.
+      </p>
+      <div class="about-pills" role="list" aria-label="Business values">
+        <span class="pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span><span class="pill-label">Does What He Says</span></span>
+        <span class="pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span><span class="pill-label">Fair Pricing</span></span>
+        <span class="pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span><span class="pill-label">On Time</span></span>
+      </div>
+      <a href="#contact" class="btn-primary" style="margin-top: 0.5rem; display: inline-block;">Work With Me</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <!-- Solar and Agricultural cards removed per owner. Remaining services renumbered 01–06. -->
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="eyebrow">What We Offer</div>
+      <h2 class="section-title" id="services-heading">Services</h2>
+      <div class="services-grid" role="list">
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-num" aria-hidden="true">01</div>
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <h3 class="svc-name">Residential New Construction</h3>
+        <p class="svc-desc">Full wiring from the ground up, coordinated with your builder and done to code.</p>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-num" aria-hidden="true">02</div>
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13"/><path d="m8 6 2-2"/><path d="m18 16 2-2"/><path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/><path d="m15 5 4 4"/></svg>
+        <h3 class="svc-name">Residential Remodels</h3>
+        <p class="svc-desc">Panels, rewires, lighting, and upgrades. Clean work in the home you already love.</p>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-num" aria-hidden="true">03</div>
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M12 6h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/><path d="M8 6h.01"/><path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/><rect x="4" y="2" width="16" height="20" rx="2"/></svg>
+        <h3 class="svc-name">Commercial Projects</h3>
+        <p class="svc-desc">Dependable commercial installations, built to code and delivered on time.</p>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-num" aria-hidden="true">04</div>
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 4 0v-6.998a2 2 0 0 0-.59-1.42L18 5"/><path d="M14 21V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v16"/><path d="M2 21h13"/><path d="M3 7h11"/><path d="m9 11-2 3h3l-2 3"/></svg>
+        <h3 class="svc-name">EV Charger Install</h3>
+        <p class="svc-desc">Level 2 home and commercial chargers, sized right for your panel and your vehicle.</p>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-num" aria-hidden="true">05</div>
+        <svg class="svc-icon"viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+        <h3 class="svc-name">Emergency Calls</h3>
+        <p class="svc-desc">Power out or something not right? We answer when you need it most.</p>
+      </article>
+
+      <article class="svc-card" role="listitem">
+        <div class="svc-num" aria-hidden="true">06</div>
+        <svg class="svc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 12V8.964"/><path d="M14 12V8.964"/><path d="M15 12a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2a1 1 0 0 1 1-1z"/><path d="M8.5 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2v-2"/></svg>
+        <h3 class="svc-name">Generator Service</h3>
+        <p class="svc-desc">Standby and portable generators: sized, installed, and serviced so you're never in the dark.</p>
+      </article>
+
+    </div><!-- /.services-grid -->
+    </div><!-- /.wrap -->
+  </section>
+
+  <!-- WORK: placeholder cells. Solar (was "Industrial / Rooftop Array") and Agricultural
+       cells swapped to offered categories. Replace ALL of these with REAL project photos +
+       captions before launch; the brief requires real work, no stock. -->
+  <section class="work" id="work" aria-labelledby="work-heading">
+    <div class="eyebrow">Portfolio</div>
+    <h2 class="section-title" id="work-heading">The <span class="t-primary">work</span></h2>
+    <div class="work-grid" role="list">
+
+      <article class="w-cell feature" role="listitem" aria-label="Commercial EV Charger, Twin Falls">
+        <div class="w-bg w-bg-2" aria-hidden="true"><img src="img/commercial/charge-point-ev-charger-twin-falls.jpg" alt="" style="object-position: center 20%;"/></div>
+        <div class="w-info"><div class="w-cat">Commercial</div><div class="w-title">EV Charger - Twin Falls</div></div>
+      </article>
+
+      <article class="w-cell" role="listitem" aria-label="Residential recessed lights, Buhl">
+        <div class="w-bg w-bg-4" aria-hidden="true"><img src="img/residential/new-recessed-lighting-after-buhl.jpg" alt=""/></div>
+        <div class="w-info"><div class="w-cat">Residential</div><div class="w-title">Recessed lights - Buhl</div></div>
+      </article>
+      
+      <article class="w-cell feature" role="listitem" aria-label="Residential EV charger, Buhl">
+        <div class="w-bg w-bg-1" aria-hidden="true"><img src="img/residential/residential-ev-charger-buhl.jpg" alt="" style="object-position: center 20%;"/></div>
+        <div class="w-info"><div class="w-cat">Residential</div><div class="w-title">EV charger - Buhl</div></div>
+      </article>
+
+      <article class="w-cell feature" role="listitem" aria-label="Commercial office lighting, Twin Falls">
+        <div class="w-bg w-bg-3" aria-hidden="true"><img src="img/commercial/new-office-lighting-twin-falls.jpg" alt=""/></div>
+        <div class="w-info"><div class="w-cat">Commercial</div><div class="w-title">Office lighting - Twin Falls</div></div>
+      </article>      
+
+      <article class="w-cell" role="listitem" aria-label="Commerical dust collector, Twin Falls">
+        <div class="w-bg w-bg-5" aria-hidden="true"><img src="img/commercial/dust-collector-twin-falls.jpg" alt=""/></div>
+        <div class="w-info"><div class="w-cat">Commerical</div><div class="w-title">Dust Collector - Twin Falls</div></div>
+      </article>
+
+      <article class="w-cell" role="listitem" aria-label="Industrial hatchery lighting, Buhl">
+        <div class="w-bg w-bg-5" aria-hidden="true"><img src="img/industrial/hatchery-lighting-upgrade-buhl.jpg" alt=""/></div>
+        <div class="w-info"><div class="w-cat">Industrial</div><div class="w-title">Hatchery lighting upgrade - Buhl</div></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION REMOVED: no Google review data yet.
+       Showing star ratings or testimonials with zero real reviews is an FTC issue and
+       invalid structured data. When real Google reviews exist, restore a #reviews section
+       here (heading was "What clients say"), add the "Reviews" nav links back, and re-add
+       aggregateRating in the JSON-LD with the TRUE rating and count. -->
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" aria-labelledby="contact-heading">
+    <div class="contact-info">
+      <div class="eyebrow">Get in Touch</div>
+      <h2 class="section-title br" id="contact-heading">Let's get&NewLine;to <span class="t-primary">work.</span>
+      </h2>
+      <p class="body-text">
+        No runaround, no upselling. Just straight answers and quality work. Call or request a quote and you'll hear back fast.
+      </p>
+      <div class="contact-details" style="margin-top: 2.5rem;">
+        <a href="tel:+12084205094" class="cd-row" aria-label="Call us at (208) 420-5094">
+          <svg class="cd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+          <div>
+            <span class="cd-label">Phone</span>
+            <span class="cd-value">(208) 420-5094</span>
+          </div>
+        </a>
+        <div class="cd-row">
+          <svg class="cd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" ><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <span class="cd-label">Service Area</span>
+            <span class="cd-value">Magic Valley, Wood River Valley, &amp; surrounding areas</span>
+          </div>
+        </div>
+        <div class="cd-row">
+          <svg class="cd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <div>
+            <span class="cd-label">Emergency</span>
+            <span class="cd-value">Fast response when you need it</span>
+          </div>
+        </div>
+        <div class="cd-row">
+          <svg class="cd-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg>
+          <div>
+            <span class="cd-label">License</span>
+            <span class="cd-value">ID #026095</span>
+          </div>
+        </div>
+        <a href="https://book.housecallpro.com/book/Hemingray-Electric-Company-LLC/0dcf97b1f2274ef288367f5e63f3eeb3?v2=true" target="_blank" rel="noopener" class="btn-primary" style="width: fit-content;" aria-label="Get a free quote, opens in new tab">Get a Free Quote</a>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -124,7 +350,7 @@
       </div>
     </div>
     <div class="footer-right">
-      <p class="footer-meta">Licensed · Insured · Locally Owned</p>
+      <p class="footer-meta">Licensed (ID# 026095) · Insured · Locally Owned</p>
       <p class="footer-meta">© 2026 Hemingray Electric Company. All rights reserved.</p>
     </div>
   </div>
@@ -175,81 +401,80 @@
   });
 
   /* ─── Form Validation (WCAG 3.3.1 / 3.3.3 / 4.1.2) ─────────
-     - Sets aria-invalid on each field
-     - Shows accessible error messages via role="alert" spans
-     - Moves focus to first invalid field on failed submit
-     - Announces success via aria-live region
+     This page currently uses a Housecall Pro booking link instead of an on-page form,
+     so the validation logic is guarded behind a null check. If a <form> with fields
+     #cf-name / #cf-message and a #cf-status live region is added later, this activates
+     automatically. (Without the guard, form.addEventListener throws on this page.)
   ────────────────────────────────────────────────────────────── */
-  const form     = document.querySelector('form');
-  const status   = document.getElementById('cf-status');
+  const form   = document.querySelector('form');
+  const status = document.getElementById('cf-status');
 
-  const rules = [
-    {
-      id:      'cf-name',
-      errorId: 'cf-name-error',
-      test:    v => v.trim().length >= 2,
-      message: 'Please enter your full name (at least 2 characters).'
-    },
-    {
-      id:      'cf-message',
-      errorId: 'cf-message-error',
-      test:    v => v.trim().length >= 10,
-      message: 'Please describe your project (at least 10 characters).'
-    }
-  ];
-
-  function setError(rule, show) {
-    const input = document.getElementById(rule.id);
-    const err   = document.getElementById(rule.errorId);
-    if (!input || !err) return;
-    input.setAttribute('aria-invalid', show ? 'true' : 'false');
-    if (show) {
-      err.textContent = rule.message;
-      err.removeAttribute('hidden');
-    } else {
-      err.textContent = '';
-      err.setAttribute('hidden', '');
-    }
-  }
-
-  /* Live validation — clear errors as user corrects fields */
-  rules.forEach(rule => {
-    const input = document.getElementById(rule.id);
-    if (!input) return;
-    input.addEventListener('input', () => {
-      if (input.getAttribute('aria-invalid') === 'true') {
-        setError(rule, !rule.test(input.value));
+  if (form && status) {
+    const rules = [
+      {
+        id:      'cf-name',
+        errorId: 'cf-name-error',
+        test:    v => v.trim().length >= 2,
+        message: 'Please enter your full name (at least 2 characters).'
+      },
+      {
+        id:      'cf-message',
+        errorId: 'cf-message-error',
+        test:    v => v.trim().length >= 10,
+        message: 'Please describe your project (at least 10 characters).'
       }
-    });
-    input.addEventListener('blur', () => {
-      /* Only validate on blur if the field has been interacted with */
-      if (input.value.trim()) setError(rule, !rule.test(input.value));
-    });
-  });
+    ];
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    let firstInvalid = null;
+    function setError(rule, show) {
+      const input = document.getElementById(rule.id);
+      const err   = document.getElementById(rule.errorId);
+      if (!input || !err) return;
+      input.setAttribute('aria-invalid', show ? 'true' : 'false');
+      if (show) {
+        err.textContent = rule.message;
+        err.removeAttribute('hidden');
+      } else {
+        err.textContent = '';
+        err.setAttribute('hidden', '');
+      }
+    }
 
+    /* Live validation: clear errors as user corrects fields */
     rules.forEach(rule => {
       const input = document.getElementById(rule.id);
-      const fail  = !rule.test(input.value);
-      setError(rule, fail);
-      if (fail && !firstInvalid) firstInvalid = input;
+      if (!input) return;
+      input.addEventListener('input', () => {
+        if (input.getAttribute('aria-invalid') === 'true') {
+          setError(rule, !rule.test(input.value));
+        }
+      });
+      input.addEventListener('blur', () => {
+        if (input.value.trim()) setError(rule, !rule.test(input.value));
+      });
     });
 
-    if (firstInvalid) {
-      /* Move focus to first invalid field so screen readers announce the error */
-      firstInvalid.focus();
-      status.textContent = 'Please correct the errors above and try again.';
-      return;
-    }
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let firstInvalid = null;
 
-    /* Success state */
-    status.textContent = 'Message sent! We\'ll be in touch within 1 business day.';
-    form.reset();
-    rules.forEach(rule => setError(rule, false));
-  });
+      rules.forEach(rule => {
+        const input = document.getElementById(rule.id);
+        const fail  = !rule.test(input.value);
+        setError(rule, fail);
+        if (fail && !firstInvalid) firstInvalid = input;
+      });
+
+      if (firstInvalid) {
+        firstInvalid.focus();
+        status.textContent = 'Please correct the errors above and try again.';
+        return;
+      }
+
+      status.textContent = 'Message sent! We\'ll be in touch within 1 business day.';
+      form.reset();
+      rules.forEach(rule => setError(rule, false));
+    });
+  }
 </script>
 </body>
 </html>
