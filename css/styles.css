@@ -27,8 +27,8 @@
 
   /* Type Scale */
   --text-base: 1.8rem;          /* primary body copy                    */
-  --text-xs:   1.4rem;          /* eyebrows, labels, meta, captions     */
-  --text-sm:   1.6rem;          /* secondary / supporting body          */
+  --text-xs:   1.6rem;          /* eyebrows, labels, meta, captions     */
+  --text-sm:   1.8rem;          /* secondary / supporting body          */
   --text-md:   var(--text-base);/* primary body — nav links, body-text  */
   --text-lg:   2rem;            /* lead text / large body               */
   --text-xl:   2.4rem;          /* statement action, small headings     */
